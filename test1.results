@@ -1,0 +1,23 @@
+
+No Cache
+initializing memory
+memory statistics:  loads: 1   stores: 1
+storage statistics:  load cost: 90   store cost: 90
+
+Direct Cache
+initializing memory
+memory statistics:  loads: 1   stores: 1
+storage statistics:  load cost: 210   store cost: 210
+cache direct stats:  hits: 1  misses: 1
+
+Fully Associative Cache
+initializing memory
+memory statistics:  loads: 1   stores: 1
+storage statistics:  load cost: 210   store cost: 210
+cache fully associative stats:  hits: 1  misses: 1
+
+NWay Cache
+initializing memory
+memory statistics:  loads: 1   stores: 1
+storage statistics:  load cost: 210   store cost: 210
+cache 2-way stats:  hits: 1  misses: 1

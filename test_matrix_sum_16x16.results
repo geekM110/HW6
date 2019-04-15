@@ -1,0 +1,50 @@
+
+No Cache
+Row Major Access
+
+memory statistics:  loads: 256   stores: 0
+storage statistics:  load cost: 23040   store cost: 0
+No Cache
+Column Major Access
+
+memory statistics:  loads: 256   stores: 0
+storage statistics:  load cost: 23040   store cost: 0
+
+Direct Cache
+Row Major Access
+
+memory statistics:  loads: 256   stores: 0
+storage statistics:  load cost: 13440   store cost: 0
+cache direct stats:  hits: 192  misses: 64
+Direct Cache
+Column Major Access
+
+memory statistics:  loads: 256   stores: 0
+storage statistics:  load cost: 53760   store cost: 0
+cache direct stats:  hits: 0  misses: 256
+
+Fully Associative Cache
+Row Major Access
+
+memory statistics:  loads: 256   stores: 0
+storage statistics:  load cost: 13440   store cost: 0
+cache fully associative stats:  hits: 192  misses: 64
+Fully Associative Cache
+Column Major Access
+
+memory statistics:  loads: 256   stores: 0
+storage statistics:  load cost: 13440   store cost: 0
+cache fully associative stats:  hits: 192  misses: 64
+
+NWay Cache
+Row Major Access
+
+memory statistics:  loads: 256   stores: 0
+storage statistics:  load cost: 13440   store cost: 0
+cache 2-way stats:  hits: 192  misses: 64
+NWay Cache
+Column Major Access
+
+memory statistics:  loads: 256   stores: 0
+storage statistics:  load cost: 53760   store cost: 0
+cache 2-way stats:  hits: 0  misses: 256

@@ -1,0 +1,23 @@
+
+No Cache
+Transpose
+memory statistics:  loads: 64   stores: 64
+storage statistics:  load cost: 5760   store cost: 5760
+
+Direct Cache
+Transpose
+memory statistics:  loads: 64   stores: 64
+storage statistics:  load cost: 10710   store cost: 3780
+cache direct stats:  hits: 77  misses: 51
+
+Fully Associative Cache
+Transpose
+memory statistics:  loads: 64   stores: 64
+storage statistics:  load cost: 8400   store cost: 2730
+cache fully associative stats:  hits: 88  misses: 40
+
+NWay Cache
+Transpose
+memory statistics:  loads: 64   stores: 64
+storage statistics:  load cost: 11130   store cost: 5250
+cache 2-way stats:  hits: 75  misses: 53
