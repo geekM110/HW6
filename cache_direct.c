@@ -34,7 +34,7 @@ void cache_direct_flush(){
 }
 
 void cache_direct_stats(){
-
+    
 }
 
 int* reinit(int* matrix) {
