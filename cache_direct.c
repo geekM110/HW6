@@ -4,6 +4,8 @@
 #include <storage.h>
 
 int matrix[100];
+int cacheLoad = 0;
+int cacheStore = 0;
 
 void cache_direct_init(){
     
@@ -11,18 +13,20 @@ void cache_direct_init(){
 }
 
 int  cache_direct_load(memory_address addr){
+    cacheLoad++;
     return matrix[addr];
 }
 
 void cache_direct_store(memory_address addr, int value){
     int current = cache_direct_load(addr);
+    cacheStore++;
 
     if (current != NULL)
         printf("Current value is: %d", current);
-    else
+    else {
         printf("Empty address");
-    
-    matrix[addr] = value;
+        matrix[addr] = value;
+    }
 }
 
 void cache_direct_flush(){
@@ -34,7 +38,7 @@ void cache_direct_flush(){
 }
 
 void cache_direct_stats(){
-    
+    printf("Cache store calls:%d, Cache load calls:%d", cacheStore, cacheLoad);
 }
 
 int* reinit(int* matrix) {
@@ -54,10 +58,4 @@ int getLength(int* matrix) {
 
 int needsReinit(int* matrix) {
     return matrix[getLength(matrix)-1] != NULL;
-}
-
-int main(){
-
-
-    return 0;
 }
