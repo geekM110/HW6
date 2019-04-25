@@ -4,12 +4,12 @@
 #include <storage.h>
 
 int matrix[100];
-int cacheLoad = 0;
-int cacheStore = 0;
+int cacheLoad;
+int cacheStore;
 
 void cache_direct_init(){
-    
-
+    cacheLoad = 0;
+    cacheStore = 0;
 }
 
 int  cache_direct_load(memory_address addr){
@@ -30,11 +30,9 @@ void cache_direct_store(memory_address addr, int value){
 }
 
 void cache_direct_flush(){
-    for (int i=0; i<getLength(matrix); i++) {
-        if (matrix[i] == NULL) {
+    for (int i=0; i<getLength(matrix); i++)
+        if (matrix[i] != NULL)
             storage_store(i, matrix[i]);
-        }
-    }
 }
 
 void cache_direct_stats(){
